@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=IM+Fell+English+SC&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(#9d5900, #3d2200);
+}
+
+.page-title {
+    color: #ff6d00;
+    font-family: "Creepster", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
+
+.game-info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info {
+    color: #ffbb89;
+    font-size: 4em;
+    font-family: "IM Fell English SC", serif;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.card {
+    background-color: black;
+    height: 175px;
+    width: 125px;
+    position: relative;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cob-web {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.cob-web-top-left {
+    transform: rotate(270deg);
+    top: 0;
+    left: 0;
+}
+
+.cob-web-top-right {
+    top: 0;
+    right: 0;
+}
+
+.cob-web-bottom-left {
+    transform: rotate(180deg);
+    bottom: 0;
+    left: 0;
+}
+
+.cob-web-bottom-right {
+    transform: rotate(90deg);
+    bottom: 0;
+    right: 0;
+}
