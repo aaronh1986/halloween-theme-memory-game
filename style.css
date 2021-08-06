@@ -55,6 +55,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    transform: rotateX(180deg);
 }
 
 .cob-web {
@@ -84,4 +90,14 @@ body {
     transform: rotate(90deg);
     bottom: 0;
     right: 0;
+}
+
+.spider {
+    align-self: flex-start;
+    transform: translateY(-10px);
+    transition: transform 100ms ease-in-out; 
+}
+
+.card-back:hover .spider {
+    transform: translateY(0);
 }
